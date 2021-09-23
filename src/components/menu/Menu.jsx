@@ -16,6 +16,7 @@ const Container = styled.div`
     .linkCss {
         text-decoration: none;
         margin-left: 8vw;
+        color: blue;
     }
 `
 

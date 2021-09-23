@@ -11,6 +11,7 @@ const Container = styled.div`
     display: inline-block;
     width: 100%;
     max-width: 100%;
+    background-color: purple;
     
 
     .linkCss {

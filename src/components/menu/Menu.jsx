@@ -7,23 +7,31 @@ import ModaMasculina from '../modaMasculina/ModaMasculina';
 import Rodape from '../rodape/Rodape';
 import Sobre from '../sobre/Sobre';
 
-const container = styled.div`
+const Container = styled.div`
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    
 
-
+    .linkCss {
+        text-decoration: none;
+        margin-left: 8vw;
+    }
 `
+
+
 
 export default () => {
     return (
-        <div id="container">
-
-            <div>
-                <Link to='home'>HOME</Link>
-                <Link to='modaFeminina'>MODA FEMiNINA</Link>
-                <Link to='modaInfantil'>MODA INFANTIL</Link>
-                <Link to='modaMasculina'>MODA MASCULINA</Link>
-                <Link to='rodape'>RODAPE</Link>
-                <Link to='sobre'>SOBRE</Link>
-            </div>
+    <>
+        <Container>
+                <Link className="linkCss" to='home'>HOME</Link>
+                <Link className="linkCss" to='modaFeminina'>MODA FEMiNINA</Link>
+                <Link className="linkCss"to='modaInfantil'>MODA INFANTIL</Link>
+                <Link className="linkCss" to='modaMasculina'>MODA MASCULINA</Link>
+                <Link className="linkCss" to='rodape'>RODAPE</Link>
+                <Link className="linkCss" to='sobre'>SOBRE</Link>
+    
 
                 <Route path="/home" component={Home}/>
                 <Route path="/modaFemenina" component={ModaFeminina}/>
@@ -31,6 +39,6 @@ export default () => {
                 <Route path="/ModaMasculina" component={ModaMasculina}/>
                 <Route path="/rodape" component={Rodape}/>
                 <Route path="/sobre" component={Sobre}/>
-        </div>
-    )
-}
+        </Container>
+    </>
+)}

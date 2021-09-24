@@ -45,9 +45,11 @@ const DivModaMasculina = styled.div`
          background-color:  #191919;
          color: white;
          font-size: 15px;
+         cursor: pointer;
    }
-   .botao-compra:hover {
-      color:  #e6f2f2;
+   button:hover {
+      background-color: #b2b2b2;
+      transition-duration: 0.4s;
    }
 `
 
@@ -62,7 +64,7 @@ export default function ModaMasculina() {
                   <img className="img" src={imgMasc1} />
                   <figcaption className="corletra">Conjunto Masculino Social R$180,00</figcaption>
                   <figcaption className="corletra">Parcelamos até 6x sem juros e 9x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
 
@@ -71,7 +73,7 @@ export default function ModaMasculina() {
                   <img className="img" src={imgMasc2} alt="" />
                   <figcaption className="corletra">Blusa Mascuilina Social 85,00  </figcaption>
                   <figcaption className="corletra">Parcelamos até 4x sem juros e 9x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
             <div className="box">
@@ -79,7 +81,7 @@ export default function ModaMasculina() {
                   <img className="img" src={imgMasc3} alt="" />
                   <figcaption className="corletra">Blusa Mascuilina Social 85,00  </figcaption>
                   <figcaption className="corletra">Parcelamos até 4x sem juros e 9x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
             <div className="box">
@@ -87,7 +89,7 @@ export default function ModaMasculina() {
                   <img className="img" src={imgMasc4} alt="" />
                   <figcaption className="corletra">Blusa Mascuilina Social 85,00  </figcaption>
                   <figcaption className="corletra">Parcelamos até 4x sem juros e 9x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
 

@@ -43,11 +43,12 @@ const DivModaFeminina = styled.div`
          background-color:  #191919;
          color: white;
          font-size: 15px;
+         cursor: pointer;
    }
-   .botao-compra:hover {
-      color:  #e6f2f2;
+   button:hover {
+      background-color: #b2b2b2;
+      transition-duration: 0.4s;
    }
-
 
 `
 export default function ModaFeminina() {
@@ -59,7 +60,7 @@ export default function ModaFeminina() {
                   <img className="img" src={imgFemin1} />
                   <figcaption className="corletra">Conjunto Corta Vento R$100,00</figcaption>
                   <figcaption className="corletra">Parcelamos até 4x sem juros e 7x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
             <div className="box">
@@ -67,7 +68,7 @@ export default function ModaFeminina() {
                   <img className="img" src={imgFemin2} alt="" />
                   <figcaption className="corletra">Vestido Preto R$85,00 </figcaption>
                   <figcaption className="corletra">Parcelamos até 2x sem juros e 4x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
             <div className="box">
@@ -75,7 +76,7 @@ export default function ModaFeminina() {
                   <img className="img" src={imgFemin3} alt="" />
                   <figcaption className="corletra">Camiseta Femina R$55,00</figcaption>
                   <figcaption className="corletra">Parcelamos até 3x sem juros e 6x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
             <div className="box">
@@ -83,7 +84,7 @@ export default function ModaFeminina() {
                   <img className="img" src={imgFemin5} alt="" />
                   <figcaption className="corletra"> Conjunto Jade Picon R$950,00 </figcaption>
                   <figcaption className="corletra">Parcelamos até 12x sem juros e 20x com juros </figcaption>
-                  <button type="submit"  className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar"  className="botao-compra">Comprar</button>
                </figure>
             </div>
          </DivModaFeminina>

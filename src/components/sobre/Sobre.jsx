@@ -12,6 +12,7 @@ const DivSobre = styled.div`
       flex-direction: row;
       justify-content: center;
       padding-top: 20vh;
+      padding-bottom: 30vh;
    
    .box1 {
     background-color: #ffffff;
@@ -20,27 +21,24 @@ const DivSobre = styled.div`
     margin: 1vw;
     font-size: 15px;
     border-radius: 2vw;
-    border: solid 0.1vw #00ced1;
+    border: solid 0.1vw black;
     }
-
     .img1 {
     width: 8vw;
     height: 17vh;
     border-radius: 20vh;
     padding-left: 1vw;
-
 }
-
 .img1:hover{
     width: 9vw;
     height: 19vh;
 }
-
 .corletra{
-    color: black ;
-    font-size: 17px;
-}
-
+      padding-top: 10px;
+      font-size: 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+   
 `
 export default function Sobre() {
 

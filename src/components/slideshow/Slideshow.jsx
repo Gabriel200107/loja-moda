@@ -9,9 +9,9 @@ import Img3 from '../../img/ModaMasc.jpg';
 
 
 const DivSlideShow = styled.div`
-widith: 100%;
-max-widith: 100%;
-margin-top: 60px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 60px;
 
 .each-slide {
   height: 255px
@@ -21,6 +21,7 @@ margin-top: 60px;
    width: 98%;
 
  }
+
 `
 
 
@@ -28,7 +29,7 @@ export default function Slideshow() {
   return (
 
     <DivSlideShow>
-      <Slide>
+      <Slide className="slider">
         <div className="each-slide">
           <div>
             <img src={Img1} alt="" />

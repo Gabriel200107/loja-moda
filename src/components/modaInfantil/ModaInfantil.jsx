@@ -43,14 +43,15 @@ const DivModaInfantil = styled.div`
          background-color:  #191919;
          color: white;
          font-size: 15px;
+         cursor: pointer;
    }
-   .botao-compra:hover {
-      color:  #e6f2f2;
+   button:hover {
+      background-color: #b2b2b2;
+      transition-duration: 0.4s;
    }
    
 
 `
-
 export default function ModaInfantil() {
 
    return (
@@ -62,7 +63,7 @@ export default function ModaInfantil() {
                   <img className="img" src={imgInfan1} />
                   <figcaption className="corletra">Vestido Infantil 150,00 </figcaption>
                   <figcaption className="corletra">Parcelamos até 5x sem juros e 10x com jutos </figcaption>
-                  <button type="submit"  className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar"  className="botao-compra">Comprar</button>
                </figure>
             </div>
 
@@ -71,7 +72,7 @@ export default function ModaInfantil() {
                   <img className="img" src={imgInfan5} alt="" />
                   <figcaption className="corletra">Conjunto Masculino 150,00  </figcaption>
                   <figcaption className="corletra">Parcelamos até 4x sem juros e 7x com jutos </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
             <div className="box">
@@ -79,7 +80,7 @@ export default function ModaInfantil() {
                   <img className="img" src={imgInfan3} alt="" />
                   <figcaption className="corletra">Vestido Infantil 45,00  </figcaption>
                   <figcaption className="corletra">Parcelamos até 5x sem juros e 2x com jutos </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
             <div className="box">
@@ -87,7 +88,7 @@ export default function ModaInfantil() {
                   <img className="img" src={imgInfan6} alt="" />
                   <figcaption className="corletra"> Conjunto Masculino 250,00 </figcaption>
                   <figcaption className="corletra">Parcelamos até 9x sem juros e 14x com juros </figcaption>
-                  <button type="submit" className="botao-compra">Comprar</button>
+                  <button type="submit" value="comprar" className="botao-compra">Comprar</button>
                </figure>
             </div>
 

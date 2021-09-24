@@ -7,25 +7,43 @@ import ModaMasculina from '../modaMasculina/ModaMasculina';
 import Rodape from '../rodape/Rodape';
 import Sobre from '../sobre/Sobre';
 
+
 const DivMenu = styled.div`
     display: inline-block;
-    width: 100%;
-    max-width: 100%;
-    background-color: #00ced1;
+    width: 97%;
+    max-width: 97%;
+    background-color: #fff;
     padding: 3vh;
     
-
-    .linkCss {
+    .linkCss  {
         text-decoration: none;
-        margin-left: 8vw;
+        margin-left: 10vw;
         color: black;
+        font-weight:bold;
+        background-color: 00ced1;
+        font-style:none;
     } 
+    .zipcode-content__block{
+        text-decoration: none;
+        margin-left: 10vw;
+        color: black;
+        font-weight:bold;
+        background-color: 00ced1;
+        font-style:none;
 
+    }
+
+    
 `
+        
 export default () => {
     return (
-    <>
+       
+                
+   
         <DivMenu>
+               
+            
                 <Link className="linkCss" to='home'>HOME</Link>
                 <Link className="linkCss" to='modaFeminina'>MODA FEMININA</Link>
                 <Link className="linkCss"to='modaInfantil'>MODA INFANTIL</Link>
@@ -34,10 +52,13 @@ export default () => {
     
 
                 <Route path="/home" component={Home}/>
-                <Route path="/modaFemenina" component={ModaFeminina}/>
+                <Route path="/modaFeminina" component={ModaFeminina}/>
                 <Route path="/modaInfantil" component={ModaInfantil}/>
                 <Route path="/ModaMasculina" component={ModaMasculina}/>
                 <Route path="/sobre" component={Sobre}/>
+
+      
         </DivMenu>
-    </>
+        
+                  
 )}
